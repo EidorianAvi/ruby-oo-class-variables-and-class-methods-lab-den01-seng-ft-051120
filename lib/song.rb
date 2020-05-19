@@ -59,7 +59,7 @@ class Song
       hash
     end
   end
-  end
+
   
 end 
   
