@@ -46,7 +46,6 @@ class Song
         output[key] += 1
       end
     end
-    binding.pry
   end
   
   def self.artist_count
