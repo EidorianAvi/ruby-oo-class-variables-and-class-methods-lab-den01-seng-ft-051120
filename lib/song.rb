@@ -1,3 +1,6 @@
+require 'pry'
+
+
 class Song 
   @@all = []
   @@artists = []
