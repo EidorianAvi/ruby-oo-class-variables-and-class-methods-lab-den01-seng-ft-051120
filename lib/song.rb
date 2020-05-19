@@ -40,7 +40,7 @@ class Song
   
   def self.genre_count
     all.reduce({}) do |output, (key,value)
-      if !output[key]
+      if output[key] == nil 
         output[:count] = 1 
       else 
         output[key] += 1
