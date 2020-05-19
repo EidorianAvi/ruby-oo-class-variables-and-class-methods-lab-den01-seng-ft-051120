@@ -39,7 +39,12 @@ class Song
   end
   
   def self.genre_count
-    all.reduce({}) do |output, (key,value)|
+    all.reduce({}) do |output, (key,value)
+      if !output[key]
+        output[key] = 1 
+      else 
+        output[key] += 1
+      end
     end
     binding.pry
   end
