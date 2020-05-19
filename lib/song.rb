@@ -49,5 +49,17 @@ class Song
     end
   end
   
+  def self.artist_count
+    @@artists.reduce({}) do |hash, element|
+      if !hash[element]
+        hash[element] = 1 
+      else 
+        hash[element] += 1 
+      end
+      hash
+    end
+  end
+  end
+  
 end 
   
