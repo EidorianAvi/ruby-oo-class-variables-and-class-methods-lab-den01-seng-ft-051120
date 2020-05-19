@@ -40,11 +40,12 @@ class Song
   
   def self.genre_count
     @@genres.reduce({}) do |hash, element|
-      hash[element] += 1 
-      hash[element]
+      if !hash[element]
+        hash[element] = 1 
+      else
+        hash[element += 1
     end
   end
-  
   
 end 
   
