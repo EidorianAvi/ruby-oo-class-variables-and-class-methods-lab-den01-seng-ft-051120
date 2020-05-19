@@ -44,6 +44,7 @@ class Song
         hash[element] = 1 
       else
         hash[element] += 1
+      end
     end
   end
   
