@@ -43,7 +43,7 @@ class Song
       if !hash[element]
         hash[element] = 1 
       else
-        hash[element += 1
+        hash[element] += 1
     end
   end
   
